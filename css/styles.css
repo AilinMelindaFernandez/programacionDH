@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+
+ li{
+    list-style:none;
+ }
+
+ a{
+     text-decoration: none;
+ }
+
+
 body{
-    background-color: palevioletred;
+    margin: 2%;
+    font-family: 'Rubik', sans-serif;
 }
+
+.navbar{
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    display:inline-block;
+    justify-content: center;
+    margin: 0 20px
+}
+
+.tituloprincipal{
+    font-size: 30px;
+}
+.music{
+    color:#F433AB;
+    font-style: italic;
+}
+
+
+
