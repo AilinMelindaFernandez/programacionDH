@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
 
-
+/*-------------Elementos generales-----------------*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
  }
 
 
@@ -19,30 +20,97 @@
 
 
 body{
+    background-color: #071E22;
     margin: 2%;
     font-family: 'Rubik', sans-serif;
+    background-image: url("../img/Sound\ Wave\ \(1\).svg");
+    background-repeat: no-repeat;
+
 }
 
+
+/*--------------Barra de navegacion-----------*/
 .navbar{
     padding: 20px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #F433AB;
 }
 
 .navbar ul li{
     display:inline-block;
     justify-content: center;
-    margin: 0 20px
+    margin: 0 20px;
 }
 
+.busqueda{
+    border-radius: 50px;
+    border-style: none;
+    outline: none;
+    padding: 6px 6px;
+}
+
+/*------------Titulo principal + foto ---------------*/
+
+.tituloprincipalyfoto{
+    margin: 10% 70px;
+    padding-bottom: 10px;
+    
+}
 .tituloprincipal{
-    font-size: 30px;
+    font-size: 35px;
 }
 .music{
     color:#F433AB;
     font-style: italic;
 }
 
+/*----------------seccion artistas----------*/
+.artistasgeneral{
+    margin-top: 200px;
+}
+
+.tituloartistas{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.artistas{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+/*---cards de artistas*/
+.card {
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin: 30px 50px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .card img{
+      width: 100%;
+  }
 
 
+  /*----------------FOOTER---------------*/
+  footer{
+     margin-top: 100px;  
+     padding-bottom: 200px;
+     background-image: url("../img/wave.svg"); 
+     background-repeat: no-repeat;
+     background-size:100%;
+   
+  }
