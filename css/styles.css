@@ -21,10 +21,7 @@
 
 body{
     background-color: #071E22;
-    margin: 2%;
     font-family: 'Rubik', sans-serif;
-    background-image: url("../img/Sound\ Wave\ \(1\).svg");
-    background-repeat: no-repeat;
 
 }
 
@@ -32,6 +29,7 @@ body{
 /*--------------Barra de navegacion-----------*/
 .navbar{
     padding: 20px ;
+    margin: 0px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,8 +52,12 @@ body{
 /*------------Titulo principal + foto ---------------*/
 
 .tituloprincipalyfoto{
-    margin: 10% 70px;
-    padding-bottom: 10px;
+  margin-top: 3%;
+    padding: 150px;
+    background-image: url("../img/Sound\ Wave\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100px;
     
 }
 .tituloprincipal{
@@ -104,13 +106,24 @@ body{
       width: 100%;
   }
 
+/*------------------SONGS----------------*/
+.canciones{
+    margin: 0px 50px 40px 50px;
+}
+.titulocancion{
+    background-color: rgb(71, 41, 61);
+    font-size: 30px;
+}
+
+.listacanciones{
+    background-color: blue;
+}
+
+/*.luismi{
+    list-style-image:url("../img/Diseño\ sin\ título.png");
+    list-style-position:inside;
+    
+}*/
 
   /*----------------FOOTER---------------*/
-  footer{
-     margin-top: 100px;  
-     padding-bottom: 200px;
-     background-image: url("../img/wave.svg"); 
-     background-repeat: no-repeat;
-     background-size:100%;
-   
-  }
+ 
