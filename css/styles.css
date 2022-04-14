@@ -30,6 +30,7 @@ body{
 .navbar{
     padding: 20px ;
     margin: 0px 50px;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -220,7 +221,7 @@ footer{
    margin:0px 20px;
 }
 
-  /*------------DETAIL-ARTIST-----------*/
+/*------------DETAIL-ARTIST-----------*/
   
   .detalleartista{
     margin: 150px 120px 40px 120px;
