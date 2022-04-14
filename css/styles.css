@@ -235,24 +235,34 @@ footer{
 }
 .titulosdetalleh3{
     font-size: 25px;
+    margin-top: 5%;
 }
 
 
 .artistafoto {
-    max-width: 40%;
+    max-width: 30%;
     max-height: 40%;
     border-radius: 2%;
 }
 
 .contenedorinfoartist{
-    background-color: #b4ff5100;
+    margin-top: 2%;
+    background-color: #66962800;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    padding: 3%;
+
+}
+.contenedorinfoartist p{
+    margin-top: 1%;
+    text-align: center;
 }
 
 .top5{
     list-style: decimal;
+    margin-top: 20%;
 }
