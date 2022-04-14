@@ -266,17 +266,9 @@ footer{
     font-size: 25px;
 }
 
-.albumdeariana {
-    background-color: #b4ff5100;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-   }
-
 .fotodearianag{
-    max-width: 500px;
-    max-height: 500px;
-    padding: 50px ;
+    max-width: 420px;
+    max-height: 420px;
+    border-radius: 2%;
+    margin: 10px 0px 0px 260px;
 }
