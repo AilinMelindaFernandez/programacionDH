@@ -256,3 +256,27 @@ footer{
 .top5{
     list-style: decimal;
 }
+
+
+.estilodelista li{
+    list-style-type: circle;
+}
+
+.titulosdetalleh4{
+    font-size: 25px;
+}
+
+.albumdeariana {
+    background-color: #b4ff5100;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+   }
+
+.fotodearianag{
+    max-width: 500px;
+    max-height: 500px;
+    padding: 50px ;
+}
