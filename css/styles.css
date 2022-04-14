@@ -30,6 +30,7 @@ body{
 .navbar{
     padding: 20px ;
     margin: 0px 50px;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +62,7 @@ body{
     
 }
 .tituloprincipal{
-    font-size: 35px;
+    font-size: 40px;
 }
 .music{
     color:#F433AB;
@@ -77,25 +78,35 @@ body{
     text-align: center;
     margin-bottom: 40px;
     font-style: italic;
-    font-size: 60px;
+    font-size: 55px;
 
 }
 
-.artistas{
+
+.artistas{    /* artistas y albums usan los mismos*/
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:center;
     align-items: center;
 }
-
+/*
+.artistas, .albums{     artistas y albums usan los mismos
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+*/
 /*---cards de artistas*/
 .card {
-    transition: 0.3sgit pull origin ma;
-    width: 20%;
+    transition: 0.3s;
+    width: 18%;
     border-radius: 5px;
     margin: 30px 50px;
   }
+ 
   
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
@@ -106,8 +117,51 @@ body{
   }
   .card img{
       width: 100%;
+      height: 36vh;
       border-radius: 5px;
   }
+
+
+  
+/*------------------ALBUMS----------------*/
+.albumsgeneral{
+    margin-top: 15%;
+}
+.albums{
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+/*---cards de albums*/
+.cardalbum {
+    transition: 0.3s;
+    width: 12%;
+    border-radius: 5px;
+    margin: 30px 30px;
+  }
+ 
+  .albums:hover .cardalbum {
+    opacity:0.3;
+  }
+  .albums .cardalbum:hover {
+    opacity:1;
+  }
+  .cardalbum img{
+      width: 100%;
+      height: 30vh;
+      border-radius: 5px;
+  }
+
+  .containeralbum {
+    padding: 2px 16px;
+  }
+
+
 
 /*------------------SONGS----------------*/
 .canciones{
@@ -116,16 +170,7 @@ body{
 .titulocancion{
     color: #F433AB;
     font-style: italic;
-    font-size: 60px;
-}
-
-
-.marcador img {
-   width: 50px;
-    height: 65px;
-    border: 5px  #3214f5;
-    box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
-
+    font-size: 55px;
 }
 
 .marcador{
@@ -135,20 +180,79 @@ body{
     padding: 10px;
     margin: 15px;
 }
-.marcador p{
-    padding-left: 20px;
+
+.marcador img {
+    width: 80px;
+    height: 90px;
+    box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
+
 }
 
-/*.luismi{
-    list-style-image:url("../img/Diseño\ sin\ título.png");
-    list-style-position:inside;
-    
-}*/
+.marcador p{
+    padding-left: 2%;
+    font-size: 22px;
+}
+
+
 
   /*----------------FOOTER---------------*/
- 
+footer{
+    margin-top: 12%;
+  background: linear-gradient(to bottom, #071E22, #f433aa81);
+  height: 40vh;
+  width: 100%;
+}
+
+.aversianda{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.integrantes, .develop{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    padding-bottom: 0px;
+    padding-top: 30px;
+}
+
+.integrantes h3{
+   margin:0px 20px;
+}
+
+/*------------DETAIL-ARTIST-----------*/
+  
+  .detalleartista{
+    margin: 150px 120px 40px 120px;
+}
+
+  .titulosdetalles{
+    color: white;
+    font-style: italic;
+    font-size: 55px;
+}
+.titulosdetalleh3{
+    font-size: 25px;
+}
 
 
+.artistafoto {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 2%;
+}
 
+.contenedorinfoartist{
+    background-color: #b4ff5100;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
 
-  /*-------------DETAIL-ARTIST-----------*/
+.top5{
+    list-style: decimal;
+}
