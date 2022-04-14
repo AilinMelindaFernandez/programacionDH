@@ -235,40 +235,37 @@ footer{
 }
 .titulosdetalleh3{
     font-size: 25px;
+    margin-top: 5%;
 }
 
 
 .artistafoto {
-    max-width: 40%;
+    max-width: 30%;
     max-height: 40%;
     border-radius: 2%;
 }
 
 .contenedorinfoartist{
-    background-color: #b4ff5100;
+    margin-top: 2%;
+    background-color: #66962800;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    padding: 3%;
+
+}
+.contenedorinfoartist p{
+    margin-top: 1%;
+    text-align: center;
 }
 
 .top5{
     list-style: decimal;
-}
 
-
-.estilodelista li{
-    list-style-type: circle;
+=======
+    margin-top: 20%;
 }
-
-.titulosdetalleh4{
-    font-size: 25px;
-}
-
-.fotodearianag{
-    max-width: 420px;
-    max-height: 420px;
-    border-radius: 2%;
-    margin: 10px 0px 0px 260px;
-}
+>>>>>>> e097430f7a68f790a00fd862c15a1125a961e8ba
