@@ -166,6 +166,12 @@ body{
 /*------------------SONGS----------------*/
 .canciones{
     margin: 150px 120px 40px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 10px;
+    margin: 125px;
+    background-color: #5451ff;
 }
 .titulocancion{
     color: #F433AB;
@@ -174,23 +180,32 @@ body{
 }
 
 .marcador{
+    background-color: #c0097a;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
     margin: 15px;
+    justify-content: flex-start;
 }
-
+.marcador a{
+    background-color: #33f463;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
 .marcador img {
-    width: 80px;
+    width: 90px;
     height: 90px;
     box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
-
+    
 }
 
 .marcador p{
     padding-left: 2%;
+    width: 100%;
     font-size: 22px;
+    background-color: aqua;
 }
 
 
@@ -224,20 +239,19 @@ footer{
 
 /*------------DETAIL-ARTIST-----------*/
   
-  .detalleartista{
+  .detallesmargen{ /*margenes para todos los detalles*/
     margin: 150px 120px 40px 120px;
 }
 
-  .titulosdetalles{
+.titulosdetalles{ /*titulos para todos los detalles*/
     color: white;
     font-style: italic;
     font-size: 55px;
 }
-.titulosdetalleh3{
-    font-size: 25px;
-    margin-top: 5%;
+.titulosdetalleh3{/*H3 para todos los detalles*/
+    font-size: 4vh;
+    margin-top: 3%;
 }
-
 
 .artistafoto {
     max-width: 30%;
@@ -245,16 +259,17 @@ footer{
     border-radius: 2%;
 }
 
-.contenedorinfoartist{
+.contenedorinfoartist{ /*este es igual al .albumscontenedor, despues vemos si los unimos o los dejamos asi*/
     margin-top: 2%;
     background-color: #66962800;
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
+    border-radius: 1%;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    padding: 3%;
+    padding: 5%;
 
 }
 .contenedorinfoartist p{
@@ -267,3 +282,30 @@ footer{
     margin-top: 20%;
 }
 
+/*------------DETAIL-ALBUM----------*/
+.albumscontenedor {
+    padding: 3%;
+    margin-top: 2%;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
+    border-radius: 1%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.fotoalbum{
+   
+    max-width: 45%;
+    border-radius: 2%;
+}
+.descrpcionalbum{
+    text-align: center;
+    margin: 2% 0%;
+}
+.listadecancionesalbum{
+    margin-top: 5%;
+    list-style-type: circle;
+}
+
+/*------------DETAIL-TRACK----------*/
