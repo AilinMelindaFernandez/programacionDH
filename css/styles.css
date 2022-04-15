@@ -126,15 +126,14 @@ body{
 /*------------------ALBUMS----------------*/
 .albumsgeneral{
     margin-top: 15%;
+    padding: 5%; 
 }
 .albums{
-    
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:center;
-    align-items: center;
-   
+    align-items: center;    
 }
 
 /*---cards de albums*/
@@ -143,6 +142,8 @@ body{
     width: 12%;
     border-radius: 5px;
     margin: 30px 30px;
+    background-color: #33c7f4;
+
   }
  
   .albums:hover .cardalbum {
@@ -310,18 +311,50 @@ footer{
 /*------------DETAIL-TRACK----------*/
 
 
-/*------------DETAIL-GENEROS----------*/
+/*--------------GENEROS-------------*/
 .imagengenero img:hover{
     background-color: rgba(31, 31, 31, 0.9);
 opacity: 1;
+}/*---anotador-*/
+
+.cardgenero {
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin: 30px 30px;
+}
+.albums:hover .cardgenero {
+    opacity:0.3;
+}
+.albums .cardgenero:hover {
+    opacity:1;
+}
+.cardgenero img{
+      width: 100%;
+      height: 30vh;
+      border-radius: 5px;
 }
 
-.imgartistaspop{
+.containeralbum{
+    padding: 2px 16px;
+}
 
+/*------------DETAIL-GENEROS----------*/
+
+.listagenerosartistas{
+    margin-top:3%;
+   
+}
+.imgartistaspop{
+    
     width: 90px;
     height: 90px;
   
 }
-.imgartistaspop p{
-    margin-top: 3%;
+.generosdetallelista{
+    text-align: center;
+    margin: 15% 0%;
+    
 }
+
+/*------------lo que sigue----------*/
