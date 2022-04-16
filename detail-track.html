@@ -9,26 +9,67 @@
     <title>Music</title>
     <link rel="shortcut icon" href="./img/PlayStation-Logo-1994.png"> 
 </head>
+
 <body>
 <!-----------------------HEADER-------------------------->
-
     <header class="navbar">
-    <div class="logo">
-        <h2 class="logotexto">Logo</h2>
-    </div>
+        <div class="logo">
+            <h2 class="logotexto">Logo</h2>
+        </div>
 
-    <ul class="menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="detail-artist.html">ARTIST</a></li>
-        <li> <a href="detail-album.html">ALBUMS</a></li>
-        <li><a href="detail-track.html">SONGS</a></li>
-        <li> <a href="generos.html">GENEROS</a></li>
-        <li><a href="index.html">CONTACTO</a></li>
-    </ul>
-    <form method="get" action="https://www.google.com/search">
-    <input class="busqueda" type="search" name="q" placeholder="Buscar" autofocus required>
-    </form>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="detail-artist.html">ARTIST</a></li>
+            <li> <a href="detail-album.html">ALBUMS</a></li>
+            <li><a href="detail-track.html">SONGS</a></li>
+            <li> <a href="generos.html">GENEROS</a></li>
+        </ul>
+        
+        <form method="get" action="https://www.google.com/search">
+            <input class="busqueda" type="search" name="q" placeholder="Buscar" autofocus required>
+        </form>
+
     </header>
+
+
+<!-----------------------SECCION INFO CANCION-------------------------->
+    <section class="detallesmargen">
+        <h2 class="titulosdetalles">Cancion</h2>
+
+        <div class="contenedorgeneralinfocancion">
+            <div class="infocancioncontenedor">
+
+                <img src="./img/albums/arianagrande-album.jpg" class="cancionalbumfoto">
+                <div class="infocancion">
+                    <h3 class="titulosdetalleh3">7 Rings </h3>
+                    <ol>
+                        <li class="listainfocancion">
+                            <p>Artista: Ariana Grande</p>
+                        </li>
+                        <li class="listainfocancion">
+                            <p>Album: Sweetener</p>
+                        </li>
+                        <li class="listainfocancion">
+                            <p>Fecha de lanzamiento: 20 de abril de 2018</p>
+                        </li>
+                        <li class="listainfocancion">
+                            <p>Duracion: 2:00</p>
+                        </li>
+                    </ol> 
+                    <div class="iramiplaylist">
+                        <a href="./playlist.html">Mi playlist</a>
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reproductor">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6ocbgoVGwYJhOv1GgI9NsF?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>            </div>
+            </div>
+
+    </section>
+
+
 <!-----------------------FOOTER-------------------------->    
     <footer>
         <div class="aversianda">
