@@ -215,10 +215,29 @@ body{
     justify-content: flex-start;
 }
 .marcador img {
-    width: 90px;
-    height: 90px;
+    border-radius: 4%;
     box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
     
+}
+.dualipamarcador{
+    max-width: 12%;
+    max-height: 12%;
+}
+.arianamarcador{
+    max-width: 12%;
+    max-height: 10%;
+}
+.justinbiebermarcador{
+    max-width: 15%;
+    max-height: 11%;
+}
+.harrystylesmarcador{
+    max-width: 12%;
+    max-height: 9%;
+}
+.taeminmarcador{
+    max-width: 13%;
+    max-height: 12%;
 }
 
 .marcador p{
@@ -393,6 +412,9 @@ opacity: 1;
     text-align: center;
     margin: 15% 0%;
 }
+.contenedorinfoartist img{
+    border-radius: 5%;
+}
 
 /*------------PLAYLIST----------*/
 .contenedorplaylist {
@@ -415,3 +437,29 @@ opacity: 1;
     align-self: center;
     margin-left: 30%;
 }
+
+/*------------SEARCH RESULTS----------*/
+.resultadosdebusqueda a{
+    color:  lightblue;
+}
+.olalbumsariana img{
+    height: 225px;
+    width: 225px;
+    border-radius: 5%;
+}
+
+.h2results{
+    margin: 3%;
+}
+.alignmenttext{
+    display: flex;
+   align-items: center;
+}
+.alignmenthijo{
+    line-height: 50px;
+}
+
+.resultadosdebusqueda ol li{
+    list-style-type: circle;
+}
+
