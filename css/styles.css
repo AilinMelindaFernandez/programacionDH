@@ -374,7 +374,7 @@ body{
 /*--------------GENEROS-------------*/
 .imagengenero img:hover{
     background-color: rgba(31, 31, 31, 0.9);
-opacity: 1;
+    opacity: 1;
 }/*---anotador-*/
 
 .cardgenero {
