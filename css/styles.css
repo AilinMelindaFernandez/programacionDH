@@ -72,14 +72,16 @@ body{
     border-style: none;
     outline: none;
     padding: 6px 6px;
+    color: #071E22;
 }
 
+/*-------------------------INDEX----------------------*/
 /*------------Titulo principal + foto ---------------*/
 
 .tituloprincipalyfoto{
   margin-top: 3%;
     padding: 150px;
-    background-image: url("../img/Sound\ Wave\ \(1\).svg");
+    background-image: url("../img/SoundWave.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100px;
@@ -155,7 +157,7 @@ body{
 .albums{
     display:flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
     align-items: center;    
 }
@@ -269,9 +271,8 @@ body{
     border-radius: 2%;
 }
 
-.contenedorinfoartist{ /*este es igual al .albumscontenedor, despues vemos si los unimos o los dejamos asi*/
+.contenedorinfoartist{ /* Este se usa en Detail-generos.html--este es igual al .albumscontenedor, despues vemos si los unimos o los dejamos asi*/
     margin-top: 2%;
-    background-color: #66962800;
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
     border-radius: 1%;
     display:flex;
@@ -280,7 +281,6 @@ body{
     justify-content:center;
     align-items: center;
     padding: 5%;
-
 }
 .contenedorinfoartist p{
     margin-top: 1%;
@@ -305,7 +305,6 @@ body{
     align-items: center;
 }
 .fotoalbum{
-   
     max-width: 45%;
     border-radius: 2%;
 }
@@ -316,7 +315,12 @@ body{
 .listadecancionesalbum{
     margin-top: 5%;
     list-style-type: circle;
+    
 }
+.albumscontenedor ol{
+    margin-top: 2%;
+}
+
 
 /*------------DETAIL-TRACK----------*/
 .contenedorgeneralinfocancion{ 
@@ -331,7 +335,6 @@ body{
     flex-direction:row;
     justify-content:flex-start;
     align-items: flex-start;
-    background-color: #c0097a00;
 }
 .cancionalbumfoto {
     max-width: 40%;
@@ -340,7 +343,6 @@ body{
 }
 .infocancion{
     margin-left: 4%;
-    background-color: #f4333300;
 }
 .infocancion ol{
     margin-top: 7%;
@@ -351,39 +353,36 @@ body{
     padding: 1%;
     margin-top: 2%;
     list-style-type: circle;
-    background-color: #33f46300;
 }
 
 .iramiplaylist{
-    background-color: #33c7f400;
     margin-top: 50%;
 }
 .iramiplaylist a{
     border: 0.5px solid #d80d8a;
+    background-color: #a1377942;
     padding: 2% 7%;
     border-radius: 8px;
     margin-right: 5%;
 }
 .reproductor{
     margin-top: 2%;
-    background-color: #071E22;
     width:100%
 }
 
 
 /*--------------GENEROS-------------*/
-.imagengenero img:hover{
-    background-color: rgba(31, 31, 31, 0.9);
-opacity: 1;
-}/*---anotador-*/
-
+.contenedorgeneros{
+    margin-top: 2%;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
+    border-radius: 1%;
+    padding: 5%;
+}
 .cardgenero {
     transition: 0.3s;
     width: 20%;
     border-radius: 5px;
     margin: 30px 30px;
-  
-    
 }
 .albums:hover .cardgenero {
     opacity:0.3;
@@ -392,12 +391,10 @@ opacity: 1;
     opacity:1;
 }
 .cardgenero img{
-      width: 200px;
-      height: 200px;
+      width: 100%;
+      height: 30vh;
       border-radius: 5px;
-      
 }
-
 
 .containeralbum{
     padding: 2px 16px;
@@ -443,27 +440,40 @@ opacity: 1;
 }
 
 /*------------SEARCH RESULTS----------*/
+.contenedorbusqueda{
+    padding: 3%;
+    margin-top: 2%;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
+    border-radius: 1%;
+ }
+ .contenedorbusquedaseccion{
+     line-height: 48px;
+ }
 .resultadosdebusqueda a{
-    color:  lightblue;
+    color:  rgb(17, 115, 148);
 }
 .olalbumsariana img{
     height: 225px;
     width: 225px;
     border-radius: 5%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.olalbumsariana{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
 }
 
 .h2results{
-    margin: 3%;
+    margin: 2%;
 }
-.alignmenttext{
-    display: flex;
-   align-items: center;
-}
-.alignmenthijo{
-    line-height: 50px;
-}
-
 .resultadosdebusqueda ol li{
     list-style-type: circle;
+    margin-left: 3%;
 }
 
