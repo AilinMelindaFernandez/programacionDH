@@ -480,5 +480,7 @@ body{
 
 /*------------Responsive----------*/
 @media(max-width:460px){
-    
+    .detallesmargen{ /*margenes para todos los detalles*/
+        margin: 100px 15px 40px 15px;
+    }
 }
