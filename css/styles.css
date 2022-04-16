@@ -155,7 +155,7 @@ body{
 .albums{
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:center;
     align-items: center;    
 }
@@ -382,6 +382,8 @@ opacity: 1;
     width: 20%;
     border-radius: 5px;
     margin: 30px 30px;
+  
+    
 }
 .albums:hover .cardgenero {
     opacity:0.3;
@@ -390,10 +392,12 @@ opacity: 1;
     opacity:1;
 }
 .cardgenero img{
-      width: 100%;
-      height: 30vh;
+      width: 200px;
+      height: 200px;
       border-radius: 5px;
+      
 }
+
 
 .containeralbum{
     padding: 2px 16px;
