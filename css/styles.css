@@ -400,6 +400,16 @@ body{
     padding: 2px 16px;
 }
 
+/*es el mismo que el de albums del index pero tambien lo utiliza generos*/
+.fotosdegenero{
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;    
+}
+
 /*------------DETAIL-GENEROS----------*/
 
 .listagenerosartistas{
@@ -484,3 +494,12 @@ body{
         margin: 100px 15px 40px 15px;
     }
 }
+
+.fotosdegenero{
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;  
+    }
