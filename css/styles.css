@@ -52,19 +52,25 @@ body{
   }
 
 /*--------------Barra de navegacion-----------*/
+.logo{
+    margin-left: 20px;
+}
 .navbar{
     padding: 20px ;
-    margin: 0px 50px;
+    margin: 8px 0px;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar ul li{
-    display:inline-block;
-    justify-content: center;
-    margin: 0 20px;
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler, .navbar label{
+    display: none;
 }
 
 .busqueda{
@@ -79,7 +85,7 @@ body{
 /*------------Titulo principal + foto ---------------*/
 
 .tituloprincipalyfoto{
-  margin-top: 3%;
+    margin-top: 3%;
     padding: 150px;
     background-image: url("../img/SoundWave.svg");
     background-repeat: no-repeat;
@@ -95,7 +101,7 @@ body{
     font-style: italic;
 }
 
-/*----------------seccion artistas----------*/
+/*----------------ARTISTAS----------*/
 .artistasgeneral{
     margin-top: 200px;
 }
@@ -154,7 +160,7 @@ body{
     margin-top: 15%;
     padding: 5%; 
 }
-.albums{
+.albums{/*se usa para la pagina de generos y en el index en l aparte de los albumnes*/
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -217,29 +223,11 @@ body{
     justify-content: flex-start;
 }
 .marcador img {
+    max-width: 12%;
+    max-height: 12%;
     border-radius: 4%;
     box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
     
-}
-.dualipamarcador{
-    max-width: 12%;
-    max-height: 12%;
-}
-.arianamarcador{
-    max-width: 12%;
-    max-height: 10%;
-}
-.justinbiebermarcador{
-    max-width: 15%;
-    max-height: 11%;
-}
-.harrystylesmarcador{
-    max-width: 12%;
-    max-height: 9%;
-}
-.taeminmarcador{
-    max-width: 13%;
-    max-height: 12%;
 }
 
 .marcador p{
@@ -261,7 +249,7 @@ body{
     font-size: 55px;
 }
 .titulosdetalleh3{/*H3 para todos los detalles*/
-    font-size: 4vh;
+    font-size: 5vh;
     margin-top: 3%;
 }
 
@@ -271,7 +259,7 @@ body{
     border-radius: 2%;
 }
 
-.contenedorinfoartist{ /* Este se usa en Detail-generos.html--este es igual al .albumscontenedor, despues vemos si los unimos o los dejamos asi*/
+.contenedorinfoartist{ /* Este se usa en Detail-generos.html y en detail-artist--este es igual al .albumscontenedor, despues vemos si los unimos o los dejamos asi*/
     margin-top: 2%;
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
     border-radius: 1%;
@@ -354,7 +342,6 @@ body{
     margin-top: 2%;
     list-style-type: circle;
 }
-
 .iramiplaylist{
     margin-top: 50%;
 }
@@ -401,31 +388,28 @@ body{
 }
 
 /*es el mismo que el de albums del index pero tambien lo utiliza generos*/
-.fotosdegenero{
-
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;    
-}
 
 /*------------DETAIL-GENEROS----------*/
 
 .listagenerosartistas{
-    margin-top:3%;
-}
-.imgartistaspop{
-    width: 90px;
-    height: 90px;
-}
-.generosdetallelista{
-    text-align: center;
-    margin: 15% 0%;
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: flex-start;
 }
 .contenedorinfoartist img{
     border-radius: 5%;
 }
+.imgartistaspop{
+    width:90px;
+    height: 90px;
+}
+.generosdetallelista{
+    text-align: center;
+    margin: 5% 5%;
+}
+
 
 /*------------PLAYLIST----------*/
 .contenedorplaylist {
@@ -457,7 +441,7 @@ body{
     border-radius: 1%;
  }
  .contenedorbusquedaseccion{
-     line-height: 48px;
+     line-height: 40px;
  }
 .resultadosdebusqueda a{
     color:  rgb(17, 115, 148);
@@ -490,16 +474,132 @@ body{
 
 /*------------Responsive----------*/
 @media(max-width:460px){
+
+    /*----------NAVBAR-----------*/
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+    /*------------------------*/
+
+
+    .titulosdetalles{ /*titulos para todos los detalles*/
+        color: white;
+        font-style: italic;
+        font-size: 40px;
+    }
     .detallesmargen{ /*margenes para todos los detalles*/
         margin: 100px 15px 40px 15px;
     }
+    .titulosdetalleh3{/*H3 para todos los detalles*/
+        font-size: 3vh;
+        margin-top: 3%;
+    }
+    .albums{/*se usa para la pagina de generos y en el index en l aparte de los albumnes*/
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .contenedorinfoartist{ /* Este se usa en Detail-generos.html y en detail-artist--este es igual al .albumscontenedor, despues vemos si los unimos o los dejamos asi*/
+        margin-top: 2%;
+        box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.26);
+        border-radius: 1%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding: 3%;
+    }
+
+
+    /*----------INDEX-----------*/
+    .tituloprincipalyfoto{
+        margin-top: 3%;
+        padding: 20px;
+        background-image: none; 
+    }
+    .tituloprincipal{
+        font-size: 25px;
+    }
+    .music{
+        color:#F433AB;
+        font-style: italic;
+    }
+
+    /*----------GENEROS-----------*/
+    .cardgenero {
+        transition: 0.3s;
+        width: 80%;
+        border-radius: 5px;
+        margin: 30px 30px;
+    }
+
+    /*----------DETAIL-TRACK------------*/
+    .infocancioncontenedor{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+    }
+    .cancionalbumfoto {
+        max-width: 60%;
+    }
+    .infocancion{
+        margin: 0%;
+        text-align: center;
+       
+    }
+    .infocancion ol{
+        margin-top: 7%;
+        text-align: center;
+    }
+    .listainfocancion{
+        margin-left: 0%;
+        width: max-content;
+        padding: 1%;
+        margin-top: 2%;
+        list-style-type: circle;
+    }
+    .iramiplaylist{
+        text-align: end;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }   
+
+    /*----------DETAIL-GENEROS------------*/
+    .listagenerosartistas{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items: flex-start;
+    }
+    .imgartistaspop{
+        width:90px;
+    }
+    .generosdetallelista{
+        text-align: center; 
+        margin: 3% 0%;
+    }
+    .contenedorinfoartist img{
+        border-radius: 5%;
+    }
 }
 
-.fotosdegenero{
-
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;  
-    }

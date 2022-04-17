@@ -17,18 +17,25 @@
             <h2 class="logotexto">Logo</h2>
         </div>
 
-        <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="detail-artist.html">ARTIST</a></li>
-            <li> <a href="detail-album.html">ALBUMS</a></li>
-            <li><a href="detail-track.html">SONGS</a></li>
-            <li> <a href="generos.html">GENEROS</a></li>
-        </ul>
-
-        <form method="get" action="search-results.html">
-            <input class="busqueda" type="search" placeholder="Buscar">
-        </form>
+        <input type="checkbox" id="toggler" >
+        <label for="toggler"><i class="fa-solid fa-bars "></i></label>
+        
+        <div class="menu">
+            <ul class="list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="detail-artist.html">ARTIST</a></li>
+                <li><a href="detail-album.html">ALBUMS</a></li>
+                <li><a href="detail-track.html">SONGS</a></li>
+                <li><a href="generos.html">GENEROS</a></li>
+                <li> <form method="get" action="search-results.html">
+                        <input class="busqueda" type="search" placeholder="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        
     </header>
+
 
 <!-----------------------SECCION GENERO DETALLE-------------------------->
 
@@ -36,30 +43,31 @@
         <h2 class="titulosdetalles">POP MUSIC</h2>
 
         <div class="contenedorinfoartist">
-            <img src="./img/generos/pop.jpg" class="popfoto">
+            <img src="./img/generos/pop.jpg">
             
             <h3 class="titulosdetalleh3">¿QUE ES LA MUSICA POP?</h3>
             <p>La música pop es un género de música popular que tuvo su origen a finales de los años 1950 como una derivación del traditional pop, en combinación con otros géneros musicales que estaban de moda en aquel momento.​​</p>
             <h3 class="titulosdetalleh3"> Artistas</h3>
 
-            <ol class="listagenerosartistas">
-                <li class="generosdetallelista"> 
+            <div class="listagenerosartistas">
+                <div class="generosdetallelista"> 
                     <img  class="imgartistaspop" src="./img/artistas/ariana.jpg" alt="">
                     <p><a href="./detail-artist.html">ARIANA GRANDE</a></p>
-                </li>
-                <li class="generosdetallelista">
+                </div>
+                <div class="generosdetallelista">
                     <img class="imgartistaspop" src="./img/artistas/dualipa.png" alt="">
                     <p>DUA LIPA</p>
-                </li>
-                <li class="generosdetallelista">
+                </div>
+                <div class="generosdetallelista">
                     <img class="imgartistaspop" src="./img/artistas/harrystyles.jpg" alt="">
                     <p>HARRY STYLES</p>
-                </li>
-                <li class="generosdetallelista">
+                </div>
+                <div class="generosdetallelista">
                     <img class="imgartistaspop" src="./img/artistas/justinbieber.jpg" alt="">
                     <p>JUSTIN BIEBER</p>
-                </li>
-            </ol>
+                </div>
+            </div>
+        </div>
 
         </div>
     </section>
