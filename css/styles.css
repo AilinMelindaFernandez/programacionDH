@@ -25,7 +25,7 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 12px;   
+    width: 8px;   
 }
 ::-webkit-scrollbar-track{
     background-color: #f3ebeb07;
@@ -42,7 +42,7 @@ footer{
     height: 40vh;
     width: 100%;
 }
-.aversianda{
+.contenedorfooter{
       padding-top: 80px;
       padding-bottom: 75px;
 }
@@ -231,7 +231,6 @@ footer{
     max-width: 12%;
     border-radius: 4%;
     box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
-
 }
 .marcador p{
     width: fit-content;
@@ -589,7 +588,11 @@ footer{
         padding-left: 2%;
         font-size: 20px;
     }
-    
+    .marcador img {
+        max-width: 20%;
+        border-radius: 4%;
+        box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
+    }
 
     /*----------GENEROS-----------*/
     .cardgenero {
@@ -666,8 +669,7 @@ footer{
     .corazon{
         margin-top: 3%;
     }
-    
-    
+     
     
 }
 
