@@ -255,7 +255,6 @@ footer{
 }
 .artistafoto {
     max-width: 30%;
-    max-height: 40%;
     border-radius: 2%;
 }
 .contenedorinfoartist{ /* Este se usa en Detail-generos.html y en detail-artist--este es igual al .albumscontenedor, despues vemos si los unimos o los dejamos asi*/
@@ -324,7 +323,6 @@ footer{
 }
 .cancionalbumfoto {
     max-width: 40%;
-    max-height: 40%;
     border-radius: 4%;
 }
 .infocancion{
